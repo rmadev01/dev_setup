@@ -2,11 +2,6 @@
 export EDITOR="nvim"
 export ZDOTDIR="$HOME"
 
-# oh-my-zsh
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="minimal"
-ENABLE_CORRECTION="true"
-
 # caching completions
 autoload -Uz compinit
 if [ -n "${ZDOTDIR:-$HOME}/.zcompdump" ] && [ "$(date +'%j')" != "$(stat -c '%y' "${ZDOTDIR:-$HOME}/.zcompdump" 2>/dev/null | cut -d' ' -f1 | date -f - +'%j' 2>/dev/null)" ]; then
