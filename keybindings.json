@@ -1,0 +1,42 @@
+[ 
+  // escape
+  { "key": "j j", "command": "extension.vim_escape", "when": "editorTextFocus && vim.mode == 'Insert'" },
+
+  // basics
+  { "key": "space w", "command": "workbench.action.files.save", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "space q", "command": "workbench.action.closeActiveEditor", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "space e", "command": "workbench.action.toggleSidebarVisibility", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "space f", "command": "workbench.action.quickOpen", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "space s g", "command": "workbench.action.findInFiles", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "space g g", "command": "gitlens.toggleFileBlame", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "space r n", "command": "editor.action.rename", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "space s r", "command": "workbench.action.splitEditorRight", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "space s d", "command": "workbench.action.splitEditorDown", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "g l", "command": "editor.action.showHover", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "q", "command": "workbench.action.toggleSidebarVisibility", "when": "sideBarFocus && !inputFocus" },
+
+  // tab navigation with alt
+  { "key": "alt+h", "command": "workbench.action.previousEditor", "when": "editorTextFocus" },
+  { "key": "alt+l", "command": "workbench.action.nextEditor", "when": "editorTextFocus" },
+
+  // move lines in visual mode
+  { "key": "shift+j", "command": "editor.action.moveLinesDownAction", "when": "editorTextFocus && vim.mode == 'Visual'" },
+  { "key": "shift+k", "command": "editor.action.moveLinesUpAction", "when": "editorTextFocus && vim.mode == 'Visual'" },
+
+  // lsp
+  { "key": "space c a", "command": "editor.action.quickFix", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "space c f", "command": "editor.action.formatDocument", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "g d", "command": "editor.action.revealDefinition", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "g r", "command": "editor.action.goToReferences", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "g i", "command": "editor.action.goToImplementation", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "[ d", "command": "editor.action.marker.prev", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "] d", "command": "editor.action.marker.next", "when": "editorTextFocus && vim.mode == 'Normal'" },
+
+  // extras
+  { "key": "space t t", "command": "workbench.action.terminal.toggleTerminal", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "space z", "command": "workbench.action.toggleZenMode", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "space s s", "command": "workbench.action.gotoSymbol", "when": "editorTextFocus && vim.mode == 'Normal'" },
+  { "key": "space space", "command": "workbench.action.showCommands", "when": "editorTextFocus && vim.mode == 'Normal'" }
+]  
+   
+   
